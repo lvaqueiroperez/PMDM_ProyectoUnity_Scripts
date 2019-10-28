@@ -28,7 +28,7 @@ public class CubosLevel1 : MonoBehaviour {
 		//empiezan hacia abajo los cubos 1, 3 y 4
 		//el cubo 2 empieza de abajo a arriba
 
-		//Basándonos en las variables que controlan qué tipo de colisión han hecho, los cubos se desplazarán jhacia arriba o hacia abajo
+		//Basándonos en las variables que controlan qué tipo de colisión han hecho, los cubos se desplazarán hacia arriba o hacia abajo
 		//En su RigidBody se ha bloqueado su rotación en todos los ejes y su movimiento en los ejes X y Z
 		if(!colTerreno13 && !collWall13){
 

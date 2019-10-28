@@ -26,6 +26,7 @@ public class PlayerLevel1 : MonoBehaviour {
 	
 	private int contM = 0;
 
+
 	void Start () {
 		
 	rb = GetComponent<Rigidbody>();
@@ -34,10 +35,12 @@ public class PlayerLevel1 : MonoBehaviour {
 
 	animator = GetComponent<Animator>();
 
+	//inicializamos las animaciones a "false"
 	 animator.SetBool("movement",false);
      animator.SetBool("movementBack",false);
 	 animator.SetBool("jump",false);
 
+	//quitamos los menús de victoria/derrota
 	menuLoose.SetActive(false);
 	menuWin.SetActive(false);
 
@@ -46,10 +49,11 @@ public class PlayerLevel1 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
-		
+			//MOVIMIENTO		
 			//NO multiplicamos por el Time.deltaTime
 			rb.velocity = new Vector3(Input.GetAxis("Horizontal") * speed ,rb.velocity.y,Input.GetAxis("Vertical") * speed);
 
+			//SALTO
 			if(Input.GetKeyDown(KeyCode.Space) && grounded ){
 
 				rb.velocity = new Vector3(rb.velocity.x, jumpforce,rb.velocity.z);

@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
  //En este script vamos a configurar el comportamiento del jugador en el mapa, simular la gravedad del planeta/mapa y el efecto de rotación del mapa
 
   /*
-  Fuente:
+  FUENTE:
   https://www.youtube.com/watch?v=UeqfHkfPNh4 (no todo lo explicado en el vídeo fue usado)
    */
 
